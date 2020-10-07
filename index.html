@@ -14,85 +14,173 @@
       rel="stylesheet"
     />
   </head>
-  <header class="top-bar">
-    <div class="container-actions">
-      <a href="" class="logo-text"
-        >I<img
-          src="/images/logo-white-star.png"
-          class="logo-image-white-star"
-        />K<img
-          src="/images/logo-white-star.png"
-          class="logo-image-white-star"
-        />E</a
-      >
-      <ul class="menu-item action-menu">
-        <li class="menu-left-button">Add Task</li>
-        <li class="menu-left-button">Guide</li>
-      </ul>
-    </div>
-    <div class="container-task-counter">
-      <ul class="menu-item">
-        <li class="counter-do-now counter-list" style="color: red;">3</li>
-        <li class="counter-do-later counter-list" style="color: yellow;">2</li>
-        <li class="counter-delegate counter-list" style="color: green;">1</li>
-        <li class="counter-delete counter-list" style="color: whitesmoke;">
-          4
-        </li>
-      </ul>
-    </div>
-    <div class="container-logo-account">
-      <img class="img-logo" src="" alt="PLACEHOLDER IMAGE" />
-      <a class="account-button" href="#">Account</a>
-    </div>
-  </header>
-  <section class="container-master-task-grid">
-    <div class="container-do-now task-box">
-      <h3 class="task-box-title">Do Now</h3>
-      <hr class="task-list-hr" />
-      <div class="container-task-list">
-        <div class="container-tasks">
-          <img
-            class="tasks-checkmark"
-            src="/images/tasks-checkmark-green.png"
-            alt=""
-          />
-          <p class="task-text">Complete AP History HW #5</p>
-        </div>
-        <div class="container-tasks">
-          <img
-            class="tasks-checkmark"
-            src="/images/tasks-checkmark-green.png"
-            alt=""
-          />
-          <p class="task-text">Finish English report</p>
-        </div>
-        <div class="container-tasks">
-          <img
-            class="tasks-checkmark"
-            src="/images/tasks-checkmark-green.png"
-            alt=""
-          />
-          <p class="task-text">Finish English report</p>
-        </div>
-        <div class="container-tasks"></div>
-        <div class="container-tasks"></div>
-        <div class="container-tasks"></div>
+  <body>
+    <section class="mask" id="mask"></section>
+    <header class="top-bar">
+      <div class="container-actions">
+        <a href="" class="logo-text"
+          >I<img
+            src="/images/logo-white-star.png"
+            class="logo-image-white-star"
+          />K<img
+            src="/images/logo-white-star.png"
+            class="logo-image-white-star"
+          />E</a
+        >
+        <button class="menu-left-button" id="btnAddTask">Add Task</button>
       </div>
-    </div>
-    <div class="container-do-later task-box">
-      <h3 class="task-box-title">Do Later</h3>
-      <p>2</p>
-    </div>
-    <div class="container-delegate task-box">
-      <h3 class="task-box-title">Delegate</h3>
-      <p>3</p>
-    </div>
-    <div class="container-delete task-box">
-      <h3 class="task-box-title">Delete</h3>
-      <p>4</p>
-    </div>
-  </section>
-  <body></body>
+      <div class="container-task-counter">
+        <ul class="menu-item">
+          <li class="counter-do-now counter-list" style="color: red;">3</li>
+          <li class="counter-do-later counter-list" style="color: yellow;"></li>
+          <li class="counter-delegate counter-list" style="color: green;">1</li>
+          <li class="counter-delete counter-list" style="color: whitesmoke;">
+            4
+          </li>
+        </ul>
+      </div>
+      <div class="container-logo-account">
+        <a class="account-button" href="#">Account</a>
+      </div>
+    </header>
+    <section class="container-modal-add-task" id="containerModalAddTask">
+      <div class="content-modal-add-task" id="contentModalAddTask">
+        <p>hi there</p>
+        <form action="">
+          <label for="tasktitle">Task:</label><br />
+          <input type="text" id="tasktitle" name="tasktitle" /><br />
+          <br />
+          <label for="">Select Task Quadrant</label> <br />
+          <br />
+          <select name="tasktype" id="tasktype">
+            <option value="do-now">Do Now</option>
+            <option value="do-later">Do Later</option>
+            <option value="delegate">Delegate</option>
+            <option value="delete">Delete</option>
+          </select>
+          <br />
+          <br />
+          <input type="submit" value="Add Task" />
+        </form>
+      </div>
+    </section>
+    <section class="container-master-task-grid">
+      <div class="container-do-now task-box">
+        <h3 class="task-box-title">Do Now</h3>
+        <hr class="task-list-hr" />
+        <div class="container-do-now-task-list" id="doNowList">
+          <div class="container-tasks">
+            <img
+              class="tasks-checkmark"
+              src="/images/tasks-checkmark-green.png"
+              alt=""
+            />
+            <p class="task-text">Complete AP History HW #5</p>
+          </div>
+          <div class="container-tasks">
+            <img
+              class="tasks-checkmark"
+              src="/images/tasks-checkmark-green.png"
+              alt=""
+            />
+            <p class="task-text">Finish English report</p>
+          </div>
+          <div class="container-tasks">
+            <img
+              class="tasks-checkmark"
+              src="/images/tasks-checkmark-green.png"
+              alt=""
+            />
+            <p class="task-text">Complete Trig HW</p>
+          </div>
+          <div class="container-tasks">
+            <img
+              class="tasks-checkmark"
+              src="/images/tasks-checkmark-green.png"
+              alt=""
+            />
+            <p class="task-text">Read Spanish Ch 2</p>
+          </div>
+          <div class="container-tasks">
+            <img
+              class="tasks-checkmark"
+              src="/images/tasks-checkmark-green.png"
+              alt=""
+            />
+            <p class="task-text">Read AP History Ch 5</p>
+          </div>
+          <div class="container-tasks">
+            <img
+              class="tasks-checkmark"
+              src="/images/tasks-checkmark-green.png"
+              alt=""
+            />
+            <p class="task-text">Go To Sleep</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-do-later task-box">
+        <h3 class="task-box-title">Do Later</h3>
+        <hr class="task-list-hr" />
+        <div class="container-do-later-task-list" id="doLaterList">
+          <div class="container-tasks">
+            <img
+              class="tasks-checkmark"
+              src="/images/tasks-checkmark-green.png"
+              alt=""
+            />
+            <p class="task-text">Choose Final project thesis</p>
+          </div>
+          <div class="container-tasks">
+            <img
+              class="tasks-checkmark"
+              src="/images/tasks-checkmark-green.png"
+              alt=""
+            />
+            <p class="task-text">Write Notes for Lecture #2</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-delegate task-box">
+        <h3 class="task-box-title">Delegate</h3>
+        <hr class="task-list-hr" />
+        <div class="container-delegate-task-list" id="delegateList">
+          <div class="container-tasks">
+            <img
+              class="tasks-checkmark"
+              src="/images/tasks-checkmark-green.png"
+              alt=""
+            />
+            <p class="task-text">
+              Follow up with Chad - Get Section of Book Report
+            </p>
+          </div>
+          <div class="container-tasks">
+            <img
+              class="tasks-checkmark"
+              src="/images/tasks-checkmark-green.png"
+              alt=""
+            />
+            <p class="task-text">Get lab report</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-delete task-box">
+        <h3 class="task-box-title">Delete</h3>
+        <hr class="task-list-hr" />
+        <div class="container-delete-task-list" id="deleteList">
+          <div class="container-tasks">
+            <img
+              class="tasks-checkmark"
+              src="/images/tasks-checkmark-green.png"
+              alt=""
+            />
+            <p class="task-text">Clean Room</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 
   <script src="/javascript/main.js"></script>
 </html>
