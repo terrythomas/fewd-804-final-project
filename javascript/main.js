@@ -15,15 +15,6 @@ for (var i = 0; i < taskList.length; i++) {
 
 // Modal Javascript
 
-// const showModalBtn = document.getElementById("btnAddTask");
-// const cntrModalAddTask = document.getElementById("containerModalAddTask");
-// const sectionMask = document.getElementById("mask");
-
-// showModalBtn.addEventListener("click", function () {
-//   cntrModalAddTask.classList.add("show");
-//   sectionMask.classList.add("show");
-// });
-
 const showModalBtn = document.getElementById("btnAddTask");
 const cntrModalAddTask = document.getElementById("contentModalAddTask");
 const sectionMask = document.getElementById("mask");
@@ -37,4 +28,18 @@ showModalBtn.addEventListener("click", function () {
 cancelModal.addEventListener("click", function () {
   cntrModalAddTask.classList.remove("show");
   sectionMask.classList.remove("show");
+});
+
+// Account Menu click to open and close
+
+const showAccountMenu = document.getElementById("accountButton");
+const menuAccount = document.getElementById("menuAccount");
+const closeMenu = document.getElementById("closeMenu");
+
+showAccountMenu.addEventListener("click", function () {
+  menuAccount.classList.add("show-flex");
+});
+
+closeMenu.addEventListener("click", function () {
+  menuAccount.classList.remove("show-flex");
 });

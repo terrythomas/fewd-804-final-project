@@ -64,6 +64,30 @@ body {
 
 .menu-account {
   display: none;
+  position: fixed;
+  top: 75px;
+  right: 5px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.close-menu {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.account-menu-dropdown {
+  list-style: none;
+}
+
+.account-menu-dropdown li {
+  border-bottom: 1px solid black;
+  text-align: right;
 }
 
 .container-modal-add-task {
@@ -109,6 +133,10 @@ body {
 
 .show {
   display: block;
+}
+
+.show-flex {
+  display: flex;
 }
 
 .task-box-title {
