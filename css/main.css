@@ -1,10 +1,5 @@
-/* Color Palette */
-/* #FF7477 - light coral
-#B388EB - lavender floral
-#8093F1 - cornflower blue
-#72DDF7 - sky blu crayola
-#04E762 - Malachite */
-/* https://coolors.co/ff7477-b388eb-8093f1-72ddf7-04e762 */
+/* Color Palette
+https://coolors.co/4b5320-b86f52-f78764-00798c-30638e  */
 
 body {
   font-family: "Rubik", sans-serif;
@@ -261,22 +256,22 @@ body {
     display: none;
   }
   .container-do-now {
-    background-color: pink;
-    border: 5px solid red;
+    background-color: #b86f52;
+    border: 5px solid #74432f;
   }
 
   .container-do-later {
-    background-color: rgb(212, 206, 149);
-    border: 5px solid yellow;
+    background-color: #f78764;
+    border: 5px solid #e9400c;
   }
 
   .container-delegate {
-    background-color: lightgreen;
-    border: 5px solid green;
+    background-color: #00798c;
+    border: 5px solid #002329;
   }
 
   .container-delete {
-    background-color: white;
-    border: 5px solid lightgray;
+    background-color: #30638e;
+    border: 5px solid #1a354c;
   }
 }
