@@ -27,8 +27,14 @@ for (var i = 0; i < taskList.length; i++) {
 const showModalBtn = document.getElementById("btnAddTask");
 const cntrModalAddTask = document.getElementById("contentModalAddTask");
 const sectionMask = document.getElementById("mask");
+const cancelModal = document.getElementById("closeModal");
 
 showModalBtn.addEventListener("click", function () {
   cntrModalAddTask.classList.add("show");
   sectionMask.classList.add("show");
+});
+
+cancelModal.addEventListener("click", function () {
+  cntrModalAddTask.classList.remove("show");
+  sectionMask.classList.remove("show");
 });

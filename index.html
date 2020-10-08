@@ -27,9 +27,11 @@
             class="logo-image-white-star"
           />E</a
         >
-        <button class="menu-left-button" id="btnAddTask">Add Task</button>
+ 
       </div>
-      <div class="container-task-counter">
+<!-- // Hiding the below div because I don't like the implementation.  Will update later -->
+
+      <!-- <div class="container-task-counter">
         <ul class="menu-item">
           <li class="counter-do-now counter-list" style="color: red;">3</li>
           <li class="counter-do-later counter-list" style="color: yellow;"></li>
@@ -38,19 +40,34 @@
             4
           </li>
         </ul>
-      </div>
-      <div class="container-logo-account">
+      </div> -->
+      <div class="container-account">
+          <button class="menu-left-button" id="btnAddTask">Add Task</button>
         <a class="account-button" href="#">Account</a>
+      </div>
+      <div class="menu-account">
+        <button class="close-menu">&times;</button>
+        <ul class="account-menu-dropdown">
+          <li class="menu-account-list-item">Profile</li>
+          <li class="menu-account-list-item">Manage Your Account</li>
+          <li class="menu-account-list-item">Sign Out</li>
+        </ul>
       </div>
     </header>
     <section class="container-modal-add-task" id="containerModalAddTask">
       <div class="content-modal-add-task" id="contentModalAddTask">
         <form class="modal-form" action="">
           <label for="tasktitle">Task:</label>
-          <input type="text" id="tasktitle" name="tasktitle" /><br />
+          <input
+            type="text"
+            id="tasktitle"
+            name="tasktitle"
+            placeholder="Enter task here"
+          /><br />
           <br />
           <label for="">Select Task Quadrant</label>
           <select name="tasktype" id="tasktype">
+            <option value=""></option>
             <option value="do-now">Do Now</option>
             <option value="do-later">Do Later</option>
             <option value="delegate">Delegate</option>
@@ -58,7 +75,10 @@
           </select>
           <br />
           <br />
-          <input type="submit" value="Add Task" />
+          <div class="form-buttons"">
+            <input type="button"  value="Cancel" id="closeModal" />
+            <input type="submit" value="Add Task" />
+        </div>
         </form>
       </div>
     </section>
